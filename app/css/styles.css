@@ -42,7 +42,7 @@ header {
 
 section {
   background-image: url("../img/background.png");
-  background-position: top;
+  background-size: cover;
   padding: 100px 140px;
   height: 100vh; }
   section .form-container {
