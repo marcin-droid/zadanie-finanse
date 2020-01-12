@@ -2,7 +2,7 @@ footer {
     @include display-flex;
     background-color: #292929;
     justify-content: space-around;
-    padding: 50px 120px;
+    padding: 50px 100px;
     text-align: center;
     align-content: center;
     .notes {
@@ -27,6 +27,7 @@ footer {
             flex-basis: 100%;
             color: white;
             text-decoration: none;
+            margin: 16px 0;
         }
     }
 }

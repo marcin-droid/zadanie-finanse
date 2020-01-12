@@ -88,7 +88,7 @@ footer {
   flex-wrap: wrap;
   background-color: #292929;
   justify-content: space-around;
-  padding: 50px 120px;
+  padding: 50px 100px;
   text-align: center;
   align-content: center; }
   footer .notes {
@@ -110,9 +110,10 @@ footer {
     footer .right a {
       flex-basis: 100%;
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      margin: 16px 0; }
 
-@media (max-width: 570px) {
+@media (max-width: 620px) {
   header .container {
     justify-content: center; }
     header .container .right {
