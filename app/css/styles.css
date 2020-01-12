@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Open Sans', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+header {
+  position: absolute;
+  width: 100%; }
+  header .container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center; }
+    header .container .left {
+      align-self: center; }
+      header .container .left i {
+        font-size: 2.3em;
+        color: #ecd407;
+        padding: 10px; }
+      header .container .left h1 {
+        display: inline-block; }
+    header .container .right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      header .container .right i {
+        font-size: 1.9em;
+        padding: 12px; }
+      header .container .right .number-container p {
+        font-size: 14px;
+        margin: 3px 0; }
+      header .container .right .number-container strong {
+        font-size: 20px;
+        font-weight: 400; }
+
+section {
+  background-image: url("../img/background.png");
+  background-position: top;
+  padding: 100px 140px;
+  height: 100vh; }
+  section .form-container {
+    box-sizing: border-box;
+    width: 370px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    section .form-container h2 {
+      padding: 0px;
+      margin: 15px 0; }
+      section .form-container h2 span {
+        color: #ecd407;
+        margin: 20px 0; }
+    section .form-container form {
+      background-color: #001d8a;
+      padding: 15px;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      section .form-container form input,
+      section .form-container form textarea {
+        flex-basis: 100%;
+        margin: 6px 0;
+        padding: 8px;
+        font-family: 'Open Sans', sans-serif; }
+      section .form-container form h3 {
+        margin: 10px 0; }
+      section .form-container form input[type=submit] {
+        flex-basis: 20%;
+        background-color: #ecd407;
+        border: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 15px;
+        margin-right: auto; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #292929;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+  align-content: center; }
+  footer .notes {
+    font-size: 0.8em;
+    text-align: center;
+    flex-basis: 80%; }
+  footer .holder {
+    font-size: 1.5em;
+    color: black;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background-color: #ecd407; }
+
+@media (max-width: 570px) {
+  header .container {
+    justify-content: center; }
+    header .container .right {
+      display: none; }
+  section {
+    padding: 100px 10px; }
+    section .form-container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%; }
+      section .form-container form input[type=submit] {
+        flex-basis: 100%; } }

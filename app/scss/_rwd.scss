@@ -1,0 +1,23 @@
+@media (max-width: 570px) {
+    header {
+        .container {
+            justify-content: center;
+            .right {
+                display: none;
+            }
+        }
+    }
+    section {
+        padding: 100px 10px;
+        .form-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            form {
+                input[type=submit] {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}

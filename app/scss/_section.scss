@@ -1,0 +1,48 @@
+section {
+    background-image: url('../img/background.png');
+    background-position: top;
+    // width: 70%;
+    padding: 100px 140px;
+    height: 100vh;
+    .form-container {
+        box-sizing: border-box;
+        width: 370px;
+        margin-left: auto;
+        @include display-flex;
+        justify-content: flex-start;
+        h2 {
+            padding: 0px;
+            margin: 15px 0;
+            span {
+                color: $basic-color;
+                margin: 20px 0;
+            }
+        }
+        form {
+            background-color: $form-color;
+            padding: 15px;
+            margin: 0;
+            @include display-flex;
+            justify-content: center;
+            input,
+            textarea {
+                flex-basis: 100%;
+                margin: 6px 0;
+                padding: 8px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h3 {
+                margin: 10px 0;
+            }
+            input[type=submit] {
+                flex-basis: 20%;
+                background-color: $basic-color;
+                border: none;
+                font-size: 1.1em;
+                font-weight: bold;
+                padding: 15px;
+                margin-right: auto;
+            }
+        }
+    }
+}

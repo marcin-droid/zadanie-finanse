@@ -1,0 +1,43 @@
+header {
+    position: absolute;
+    width: 100%;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        @include display-flex;
+        justify-content: space-between;
+        align-content: center;
+        .left {
+            align-self: center;
+            i {
+                font-size: 2.3em;
+                color: $basic-color;
+                padding: 10px;
+            }
+            ;
+            h1 {
+                display: inline-block;
+            }
+        }
+        .right {
+            @include display-flex;
+            align-items: center;
+            i {
+                font-size: 1.9em;
+                padding: 12px;
+            }
+            .number-container {
+                p {
+                    font-size: 14px;
+                    margin: 3px 0;
+                }
+                strong {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                ;
+            }
+        }
+    }
+}
